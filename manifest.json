@@ -1,0 +1,25 @@
+{
+    "name": "Media Speed Control",
+    "version": "1.0",
+	"author": "Jactami",
+    "manifest_version": 2,
+    "description": "This is an extension that allows the user to change the playback rate of a video or audio element.",
+    "content_scripts": [{
+        "matches": [
+            "<all_urls>"
+        ],
+        "all_frames": true,
+        "js": [
+            "content.js"
+        ]
+    }],
+    "permissions": [
+        "tabs",
+        "<all_urls>",
+        "storage"
+    ],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "Media Speed Control"
+    }
+}

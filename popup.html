@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Media Speed Control</title>
+    <meta name="description"
+        content="A browser extension that allows users to change the playback rate of video and audio elements.">
+    <meta name="author" content="Baddi">
+    <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+
+<body>
+    <div id="inputContainer">
+        <p>Select Playback Rate:</p>
+        <input type="range" min="0" max="5" step="0.25" id="inputSlider"></input>
+        <p id="rateFeedback"></p>
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox">use strict mode</label>
+    </div>
+    <div id="noMediaContainer">
+        <p>No media found on this page.</p>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
