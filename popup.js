@@ -62,7 +62,7 @@ function updatePopup() {
                     noMediaContainer.style.display = "block";
                 } else { // media was found
                     slider.value = response.currentRate;
-                    feedback.innerHTML = `current rate: ${response.currentRate}`;
+                    feedback.innerHTML = response.currentRate;
                     getFromStorage("strictMode", strictMode => checkbox.checked = strictMode || false);
                     inputContainer.style.display = "block";
                     noMediaContainer.style.display = "none";

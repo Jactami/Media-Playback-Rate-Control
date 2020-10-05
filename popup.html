@@ -12,11 +12,16 @@
 
 <body>
     <div id="inputContainer">
-        <p>Select Playback Rate:</p>
-        <input type="range" min="0" max="5" step="0.25" id="inputSlider"></input>
+        <p>current rate</p>
         <p id="rateFeedback"></p>
-        <input type="checkbox" id="checkbox">
-        <label for="checkbox">use strict mode</label>
+        <input type="range" min="0" max="5" step="0.25" id="inputSlider" class="slider">
+        <label for="checkbox">
+            <span class="switch">
+                <input type="checkbox" id="checkbox">
+                <span class="dot"></span>
+            </span>
+            <span class="labelText">strict mode</span>
+        </label>
     </div>
     <div id="noMediaContainer">
         <p>No media found on this page.</p>

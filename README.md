@@ -18,4 +18,3 @@ This extension allows users to adjust the playback rate of HTML5 video and audio
 ## TODOs/ ideas for possible future implementations
 * add options page to change and save personal settings
 * add keylisteners to control the playback rate
-* remake UI in a more convenient approach
