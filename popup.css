@@ -1,3 +1,7 @@
+:root {
+  --main-theme-color: #0a6fc2;
+}
+
 body {
     min-width: 180px;
     background: #F8F8F8;
@@ -23,7 +27,7 @@ p {
 #rateFeedback {
     display: block;
     font-size: 48px;
-    color: #0a6fc2;
+    color: var(--main-theme-color);
 }
 
 /* rate slider */
@@ -50,7 +54,7 @@ p {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background: #0a6fc2;
+    background: var(--main-theme-color);
     cursor: pointer;
 }
 
@@ -58,7 +62,7 @@ p {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background: #0a6fc2;
+    background: var(--main-theme-color);
     cursor: pointer;
 }
 
@@ -109,7 +113,7 @@ p {
 }
 
 input:checked+.dot {
-    background-color: #0a6fc2;
+    background-color: var(--main-theme-color);
 }
 
 input:checked+.dot:before {
