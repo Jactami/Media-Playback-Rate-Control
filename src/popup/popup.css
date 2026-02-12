@@ -3,127 +3,127 @@
 }
 
 body {
-    min-width: 180px;
-    background: #F8F8F8;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    color: #606060;
+  min-width: 180px;
+  background: #f8f8f8;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #606060;
 }
 
 p {
-    margin: 5px;
+  margin: 5px;
 }
 
 #inputContainer {
-    display: none;
-    min-height: 150px;
+  display: none;
+  min-height: 150px;
 }
 
 #noMediaContainer {
-    margin: auto;
+  margin: auto;
 }
 
 #rateFeedback {
-    display: block;
-    font-size: 48px;
-    color: var(--main-theme-color);
+  display: block;
+  font-size: 48px;
+  color: var(--main-theme-color);
 }
 
 /* rate slider */
 .slider {
-    -webkit-appearance: none;
-    width: 80%;
-    height: 5px;
-    border-radius: 5px;
-    background: #d3d3d3;
-    outline: none;
-    opacity: 0.8;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-    margin: auto;
+  -webkit-appearance: none;
+  width: 80%;
+  height: 5px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.8;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  margin: auto;
 }
 
 .slider:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background: var(--main-theme-color);
-    cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--main-theme-color);
+  cursor: pointer;
 }
 
 .slider::-moz-range-thumb {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background: var(--main-theme-color);
-    cursor: pointer;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--main-theme-color);
+  cursor: pointer;
 }
 
 /* mode switch */
 .switch {
-    position: fixed;
-    display: inline-block;
-    width: 31px;
-    height: 17px;
-    left: 13%;
-    bottom: 10px;
+  position: fixed;
+  display: inline-block;
+  width: 31px;
+  height: 17px;
+  left: 13%;
+  bottom: 10px;
 }
 
 .switch input {
-    display: none;
-    width: 0;
-    height: 0;
+  display: none;
+  width: 0;
+  height: 0;
 }
 
 .dot {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 13px;
-    background-color: #ccc;
-    opacity: 0.8;
-    transition: .2s;
-    transition: opacity .2s;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 13px;
+  background-color: #ccc;
+  opacity: 0.8;
+  transition: 0.2s;
+  transition: opacity 0.2s;
 }
 
 .dot:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .dot::before {
-    position: absolute;
-    content: "";
-    height: 13px;
-    width: 13px;
-    left: 3px;
-    bottom: 2px;
-    border-radius: 50%;
-    background-color: white;
-    transition: .2s;
+  position: absolute;
+  content: '';
+  height: 13px;
+  width: 13px;
+  left: 3px;
+  bottom: 2px;
+  border-radius: 50%;
+  background-color: white;
+  transition: 0.2s;
 }
 
-input:checked+.dot {
-    background-color: var(--main-theme-color);
+input:checked + .dot {
+  background-color: var(--main-theme-color);
 }
 
-input:checked+.dot:before {
-    transform: translateX(12px);
+input:checked + .dot:before {
+  transform: translateX(12px);
 }
 
 .labelText {
-    position: fixed;
-    margin: 0;
-    left: 65px;
-    bottom: 7px;
-    transform: translateY(-3px);
+  position: fixed;
+  margin: 0;
+  left: 65px;
+  bottom: 7px;
+  transform: translateY(-3px);
 }
