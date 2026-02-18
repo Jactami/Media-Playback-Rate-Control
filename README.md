@@ -1,22 +1,47 @@
 # Media Speed Control
 
-This extension allows users to adjust the playback rate of HTML5 video and audio elements. It also features a _strict mode_ which enables users to overwrite the default behaviour of media players that might try to reset the playback rate. This extension works for Chromium based browsers and Mozilla Firefox.
+**Media Speed Control** is a browser extension for Chromium-based browsers that allows users to adjust the playback rate of HTML5 video and audio elements.
 
-## Setup
+---
 
-- Chromium based browsers (Google Chrome, Microsoft Edge, Opera, Vivaldi, etc.):
-  1. Type `chrome://extensions` in the address bar. (If you use a browser other than Google Chrome, it will redirect you automatically.)
-  2. Enable the **Developer mode** temporarily.
-  3. Click **Load unpacked extension...** and select the extension's folder.
+## Features
 
-- Firefox:
-  1. Delete the `manifest.json` file and rename `manifest_firefox.json` to `manifest.json`.
-  2. Type `about:debugging#/runtime/this-firefox` in the address bar.
-  3. Click **Load Temporary Add-on** and select the `manifest.json` from the extension's folder.
+- Adjust playback speed of HTML5 video and audio elements
+- Optional **Strict Mode** to enforce the selected playback rate
+- Lightweight and easy to integrate
+- Works with Chromium-based browsers (Google Chrome, Microsoft Edge, Opera, Vivaldi, etc.)
 
-  _Remarkable Notes:_ Extensions which are installed this way only remain installed until Firefox restarts. Also, Firefox only supports sound for playback rates which are not higher than 4 times the regular playback rate.
+---
 
-## TODOs/ ideas for possible future implementations
+## Installation
 
-- add options page to change and save personal settings
-- add keylisteners to control the playback rate
+### Build the Extension
+
+```bash
+npm run build
+```
+
+The production-ready files will be generated in the dist folder.
+
+### Load the Extension in Your Browser
+
+1. Open <chrome://extensions> in your browser.
+(In Chromium-based browsers other than Chrome, you will be redirected automatically.)
+
+2. Enable `Developer Mode`.
+
+3. Click `Load unpacked`.
+
+4. Select the generated dist folder.
+
+The extension is now installed locally.
+
+---
+
+## TODOs
+
+- Add an options page for customizing and saving user preferences
+
+- Implement keyboard shortcuts to control playback speed
+
+- Improve error handling and resilience

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <main id="root">
+      <!-- Header -->
+      <header>
+        <h1 id="popup-title"></h1>
+      </header>
+
+      <section id="rate-control-section" class="hidden">
+        <!-- Current Playback Rate -->
+        <div id="current-rate-display"></div>
+
+        <!-- Playback Rate Slider -->
+        <div id="rate-slider-container">
+          <label for="rate-slider-input" class="hidden">Playback Rate</label>
+
+          <input
+            id="rate-slider-input"
+            class="slider"
+            type="range"
+            min="0"
+            max="5"
+            step="0.25"
+            value="1"
+          />
+        </div>
+
+        <br />
+
+        <div id="strict-mode-toggle-container" class="switch-container">
+          <input id="strict-mode-toggle" type="checkbox" class="checkbox" />
+          <label for="strict-mode-toggle" class="switch"></label>
+          <span for="strict-mode-toggle" class="switch-label">Strict Mode</span>
+        </div>
+      </section>
+
+      <!-- Status Section -->
+      <section id="media-status-section">
+        <p>No media elements found.</p>
+      </section>
+    </main>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
